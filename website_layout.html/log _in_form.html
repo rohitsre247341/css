@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      html {
+        height: 100%;
+      }
+      body {
+        margin: 0;
+        padding: 0;
+        background: linear-gradient(#060657,#05058a);
+        font-family: Arial, Helvetica, sans-serif;
+      }
+      .login-box {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: 200px;
+        padding: 40px;
+        background: blanchedalmond;
+        transform: translate(-50%, -50%);
+        border-radius: 10px;
+      }
+      .login-box h2 {
+        text-align: center;
+        margin-bottom: 30px;
+        padding: 0%;
+        color: black
+      }
+      .login-box .user-box {
+        position: relative;
+      }
+      .login-box .user-box input {
+        width: 100%;
+        padding: 5px;
+        font-size: 16px;
+        margin-bottom: 10px;
+        border: none;
+        border-bottom: 1px solid black;
+        outline: none;
+        background: transparent;
+      }
+      .login-box .user-box label {
+        position: absolute;
+        top: 0;
+        left: 0;
+        padding: 10px;
+        pointer-events: none;
+      }
+      .login-box .user-box input:focus ~ label ,
+      .login-box .user-box input:valid ~label {
+        top: -20px;
+        left: 0;
+        font-size: 12px;
+      }
+      .login-box form a {
+        position: relative;
+        display: inline-block;
+        padding: 10px 20px;
+        text-transform: uppercase;
+        font-size: 16px;
+        text-decoration: none;
+        overflow: hidden;
+        color: black;
+        margin-top: 40px;
+        letter-spacing: 2px;
+      }
+      .login-box a:hover {
+        background: #03e9f4;
+        border-radius: 5px;
+      }
+      
+    </style>
+    <title>
+      log in form
+    </title>
+  </head>
+  <body>
+    <div class="login-box">
+      <h2>Login</h2>
+      <form>
+        <div class="user-box">
+          <input type="text" name="" required="">
+          <label>Username</label>
+        </div>
+        <div class="user-box">
+          <input type="password" name="" required="">
+          <label>Password</label>
+        </div>
+        <a href="#">
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+          Submit
+        </a>
+      </form>
+    </div>
+
+  </body>
+</html>
