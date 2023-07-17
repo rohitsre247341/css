@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      body {
+        background: #0808a5;
+        margin: 0;
+        padding: 0;
+      }
+      .all {
+        margin-top: 100px;
+        margin-bottom: 100px;
+      }
+      .form_in {
+        max-width: 400px;
+        margin: 0 auto;
+        padding: 15px 35px 45px;
+        background-color: aliceblue;
+        border: 2px solid black;
+      }
+      .input1 , .checkbox1 { 
+        margin: 10px;
+      }
+      .input1 {
+        position: relative;
+        font-size: 20px;
+        height: auto;
+        padding: 7px;
+      }
+      .log {
+        padding: 3px;
+        margin-top: 10px;
+        width: 150px;
+        height: 30px;
+        margin-left: 70px;
+        margin-top: 20px;
+      }
+
+    </style>
+    <title> form 2</title>
+  </head>
+  <body>
+    <div class="all">
+      <form  class="form_in">
+        <h2 class="heading">Please log in</h2>
+        <input type="text" class="input1" placeholder="Enter ID">
+        <input type="password" class="input1" placeholder="Enter Password"> <br>
+        <input type="checkbox" id="remember">
+        <label for="remember" class="checkbox1">remember-me</label> <br>
+        <button class="log" type="submit"> Log in</button>
+      </form>
+    </div>
+  </body>
+</html>
